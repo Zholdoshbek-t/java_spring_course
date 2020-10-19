@@ -1,4 +1,7 @@
-public class Manager extends Employee{
+package child;
+import parent.Employee;
+
+public class Manager extends Employee {
     private boolean hasStocks;
 
     public Manager(String fio, int age, int salary, boolean hasStocks){

@@ -1,4 +1,7 @@
-public class CEO extends Employee{
+package child;
+import parent.Employee;
+
+public class CEO extends Employee {
     private boolean hasCompanyCar;
 
     public CEO(String fio, int age, int salary, boolean hasCompanyCar){
@@ -21,7 +24,7 @@ public class CEO extends Employee{
         } else{
             System.out.println("Doesn't have a company car");
         }
-        System.out.println("Position: CEO.");
+        System.out.println("Position: child.CEO.");
         System.out.println();
     }
 
@@ -32,7 +35,7 @@ public class CEO extends Employee{
 
     @Override
     public void goToDayOff() {
-        System.out.println("The main role of our company gets CEO.");
+        System.out.println("The main role of our company gets child.CEO.");
         System.out.println("So, it's better for use to let me to have a rest.");
     }
 }

@@ -1,3 +1,8 @@
+import child.CEO;
+import child.Developer;
+import child.Manager;
+import child.Specialist;
+
 public class Main {
     public static void main(String[] args){
         Specialist football = new Specialist("Leo Messi",27,2200000,99);

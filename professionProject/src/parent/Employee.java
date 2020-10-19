@@ -1,3 +1,5 @@
+package parent;
+
 public abstract class Employee {
     private String fio;
     private int age;

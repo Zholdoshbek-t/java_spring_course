@@ -1,3 +1,6 @@
+package child;
+import parent.Employee;
+
 public class Specialist extends Employee {
     private int level;
 

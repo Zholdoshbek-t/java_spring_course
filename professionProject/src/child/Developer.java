@@ -1,4 +1,7 @@
-public class Developer extends Employee{
+package child;
+import parent.Employee;
+
+public class Developer extends Employee {
     private String rang;
 
     public Developer(String fio, int age, int salary, String rang){
