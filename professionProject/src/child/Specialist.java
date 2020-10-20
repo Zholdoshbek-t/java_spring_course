@@ -1,11 +1,12 @@
 package child;
 import parent.Employee;
+import parent.Rang;
 
 public class Specialist extends Employee {
     private int level;
 
-    public Specialist(String fio, int age, int salary, int level){
-        super(fio,age,salary);
+    public Specialist(String fio, int age, int salary, int level, Rang rang){
+        super(fio,age,salary, rang);
         this.level = level;
     }
     public Specialist(){

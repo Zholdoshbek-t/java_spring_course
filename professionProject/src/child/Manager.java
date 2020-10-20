@@ -1,11 +1,12 @@
 package child;
 import parent.Employee;
+import parent.Rang;
 
 public class Manager extends Employee {
     private boolean hasStocks;
 
-    public Manager(String fio, int age, int salary, boolean hasStocks){
-        super(fio, age, salary);
+    public Manager(String fio, int age, int salary, boolean hasStocks, Rang rang){
+        super(fio, age, salary, rang);
         this.hasStocks = hasStocks;
     }
     public Manager(){

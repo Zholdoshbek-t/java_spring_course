@@ -1,11 +1,12 @@
 package child;
 import parent.Employee;
+import parent.Rang;
 
 public class CEO extends Employee {
     private boolean hasCompanyCar;
 
-    public CEO(String fio, int age, int salary, boolean hasCompanyCar){
-        super(fio, age, salary);
+    public CEO(String fio, int age, int salary, boolean hasCompanyCar, Rang rang){
+        super(fio, age, salary, rang);
         this.hasCompanyCar = hasCompanyCar;
     }
     public CEO(){

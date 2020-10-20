@@ -1,12 +1,11 @@
 package child;
 import parent.Employee;
+import parent.Rang;
 
 public class Developer extends Employee {
-    private String rang;
 
-    public Developer(String fio, int age, int salary, String rang){
-        super(fio,age,salary);
-        this.rang = rang;
+    public Developer(String fio, int age, int salary, Rang rang){
+        super(fio,age,salary, rang);
     }
     public Developer(){
 
@@ -18,7 +17,6 @@ public class Developer extends Employee {
 
     @Override
     public void print(){
-        System.out.println("Rang: " + rang);
         System.out.println("Position: developer.");
         System.out.println();
     }
