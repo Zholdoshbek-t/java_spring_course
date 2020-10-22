@@ -29,13 +29,14 @@ public class Main {
 
     public static void main(String[] args){
 
-        Employee[] employees = {new Developer("Sanjar",19,190000,Rang.JUNIOR),
-                                new Developer("Samat",18,7000000,Rang.SENIOR),
+        Employee[] employees = {new Developer("Sanjar",19,190000,Rang.SENIOR),
+                                new Developer("Samat",18,7000000,Rang.JUNIOR),
                                 new Developer("Shabdan",18,520000,Rang.MIDDLE),
                                 new Developer("Tilek",19,3000000,Rang.TEAMLEAD)};
 
-        for(Employee employee: employees){
-            printDeveloperGrade(employee);
+        for(Employee employee: employees) {
+            employee.getRang().printPhrase();
         }
+
     }
 }
