@@ -1,27 +1,25 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> books = new ArrayList<>(5);
+        LinkedList<String> books = new LinkedList<String>();
+
         books.add("Harry Potter");
         books.add("The perfect look");
         books.add("Lust for Life");
         books.add("Lui, Artur and Adel");
         books.add("Sherlock Holmes");
         books.forEach(System.out::println);
-        System.out.println("------------------");
-        books.remove(books.size()-1);
-        for(String s: books){
-            System.out.println(s);
-        }
-        System.out.println("------------------");
-        books.set(3, "Sherlock Holmes");
-        books.forEach(x-> System.out.println(x));
-        System.out.println("------------------");
-        System.out.println(books.get(books.size()-1));
-        books.clear();
-        books.add("-");
-        books.add("-");
-        books.add("-");
+        System.out.println("--------");
+        books.offerFirst("Djamilya");
+        books.offerFirst("Djamilya");
+        books.offer("Friends");
+        books.offer("Friends");
+        books.forEach(System.out::println);
+        System.out.println("--------");
+        books.removeFirst();
+        books.removeLast();
+        books.forEach(System.out::println);
     }
 }
