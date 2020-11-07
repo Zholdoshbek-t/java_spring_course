@@ -16,6 +16,4 @@ public enum Rang {
         System.out.println(phrase);
     }
 
-
-
 }
