@@ -4,7 +4,7 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
         LinkedList<String> books = new LinkedList<String>();
-
+        // Talk is cheap. Show me the code.
         books.add("Harry Potter");
         books.add("The perfect look");
         books.add("Lust for Life");
