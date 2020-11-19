@@ -4,7 +4,7 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
         LinkedList<String> books = new LinkedList<String>();
-
+        // An API that isn't comprehensible isn't usable.
         books.add("Harry Potter");
         books.add("The perfect look");
         books.add("Lust for Life");
